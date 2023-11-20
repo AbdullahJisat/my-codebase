@@ -1,0 +1,21 @@
+<?php
+
+namespace {{ namespace }};
+
+use App\Models\{{ class }};
+use App\Contracts\{{ class }}Contract;
+
+class {{ class }}Repository extends BaseRepository implements {{ class }}Contract
+{
+    protected $model;
+
+    /**
+     * {{ class }}Repository constructor.
+     *
+     * @param {{ class }} $model
+     */
+    public function __construct({{ class }} $model)
+    {
+        $this->model = $model;
+    }
+}
